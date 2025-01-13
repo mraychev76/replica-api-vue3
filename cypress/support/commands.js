@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('authorize', (login_url, password, user_id, platform_id) => {
+    cy.request({
+        method: 'POST',
+        url: login_url,
+        headers: {
+          'Platform-Id': platform_id
+        },
+        body: {
+          password,
+          user_id
+        }
+    })
+})
