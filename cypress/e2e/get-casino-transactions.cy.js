@@ -1,7 +1,7 @@
 require("dotenv").config()
-const user_id = process.env.USER_ID
-const password = process.env.PASSWORD
-const platform_id = "28fcaa6c-7147-457b-824c-391a95038d96"
+const password = 'Qwerty1Admin*'
+const user_id = 'm.raychev@nuxgame.com'
+const platform_id = '90dd1cb0-ad8e-480a-b06e-d4c110b6653b'
 let token = ''
 
 const get_casino_transactions_url = "/api/v2/get_casino_transactions"
@@ -17,7 +17,7 @@ describe('Get Casino Transactions Tests', () => {
       },
       body: {
         "password": "Qwerty1Admin*",
-        "user_id": "maxraychev76@gmail.com",
+        "user_id": "m.raychev@nuxgame.com",
       }
     }).then(({body}) => {
       token = body.data.token
