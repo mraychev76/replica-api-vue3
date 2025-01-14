@@ -1,5 +1,5 @@
 # REPLICA-API-VUE3-Tests
-This is set of auto-tests for BIG-Proxy API
+This is set of auto-tests for testing Endpoints in context of task https://app.clickup.com/t/2420220/UBT-2224
 ## Running Replica-Api-VUE3 Tests
 
 Follow these steps to run API tests locally:
